@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardBackgroundColor="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/card_image"
+                android:layout_width="100dp"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/card_name"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    tool:text="Name"
+                    android:gravity="center|left"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:progressTint="@color/colorAccent"
+                        style="@style/Widget.AppCompat.RatingBar.Indicator"
+                        android:numStars="5"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/card_rating_count"
+                        android:gravity="center|left"
+                        android:textColor="#414141"
+                        tool:text="2.3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/card_mostbooked"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:drawableStart="@drawable/fill_star"
+                        android:drawableTint="@color/colorWhite"
+                        android:text="Athentic"
+                        android:gravity="center"
+                        android:layout_marginRight="3dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/btn_card_design"
+                        android:drawableLeft="@drawable/fill_star" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/card_topreviwed"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:drawableStart="@drawable/fill_star"
+                        android:drawableTint="@color/colorWhite"
+                        android:text="Helping Hand"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/btn_card_design"
+                        android:drawableLeft="@drawable/fill_star" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_categories"
+                android:textSize="16dp"
+                android:textColor="#2e2e2e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/card_education"
+                android:textSize="16dp"
+                android:textColor="#2e2e2e"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/card_consult"
+                android:textSize="16dp"
+                android:textColor="#2e2e2e"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/card_available"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="#517291"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/btn_card_des"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/card_book"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:text="Book Appointment"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/btn_style"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

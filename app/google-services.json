@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "204345664948",
+    "firebase_url": "https://e-lawyer-bb64a-default-rtdb.firebaseio.com",
+    "project_id": "e-lawyer-bb64a",
+    "storage_bucket": "e-lawyer-bb64a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204345664948:android:7cde872fed1e7ea9d77ee1",
+        "android_client_info": {
+          "package_name": "com.legal.adviser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204345664948-04dut0429pvoa8e90mev47md2utgpc7i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.legal.adviser",
+            "certificate_hash": "8d515c31bda121ebcc5830448b19355c4a9dcbbb"
+          }
+        },
+        {
+          "client_id": "204345664948-apsqjutpcmia3j6urgeob36cs3gkeclu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdzIfIBy6Pe4hctjhvpBvxUFAxygjflVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204345664948-apsqjutpcmia3j6urgeob36cs3gkeclu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
